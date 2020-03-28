@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppXamShell.Views.TestPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New group"
+                    Order="Secondary"
+                    Priority="0" />
+        <ToolbarItem Text="Settings"
+                    Order="Secondary"
+                    Priority="0" />
+    </ContentPage.ToolbarItems>
+
+    <Shell.SearchHandler>
+        <SearchHandler Placeholder="Enter search term"
+                        ShowsResults="true"
+                        DisplayMemberName="Name" />
+    </Shell.SearchHandler>
+
+    <StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
+</ContentPage>
