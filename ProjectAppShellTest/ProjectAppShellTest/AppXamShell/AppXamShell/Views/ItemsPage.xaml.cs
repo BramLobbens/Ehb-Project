@@ -23,7 +23,7 @@ namespace AppXamShell.Views
         public ItemsPage()
         {
             InitializeComponent();
-
+            
             BindingContext = viewModel = new ItemsViewModel();
         }
 
@@ -33,7 +33,8 @@ namespace AppXamShell.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            //await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            await Navigation.PushAsync(new ChatPage(new ChatViewModel()));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;

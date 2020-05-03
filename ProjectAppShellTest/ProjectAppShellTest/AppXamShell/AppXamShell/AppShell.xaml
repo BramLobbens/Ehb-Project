@@ -34,27 +34,18 @@
         <controls:FlyoutHeader />
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="Main"
-                FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Subitem1" Icon="tab_about.png">
-            <ShellContent Title="Chat" ContentTemplate="{DataTemplate views:ItemsPage}"></ShellContent>
+
+    <FlyoutItem Title="Chat">
+        <Tab Title="Chat">
+            <ShellContent Title="Groups" ContentTemplate="{DataTemplate views:NewChatPage}"></ShellContent>
             <ShellContent Title="Status" ContentTemplate="{DataTemplate views:TestPage}"></ShellContent>
         </Tab>
-        <ShellContent Title="Subitem2" ContentTemplate="{DataTemplate views:TestPage}"></ShellContent>
-
-        <!--#region View Binding Question --><!--
-        // will be created once navigated to
-        <ShellContent Title="Test A" 
-                      ContentTemplate="{DataTemplate views:TestPage}">
-        </ShellContent>
-        
-        // will be created on app startup
-        <ShellContent Title="Test B">
-            <views:TestPage />
-        </ShellContent>-->
-        <!--#endregion-->
-        
+        <Tab Title="Pages">
+            <ShellContent Title="Page1" ContentTemplate="{DataTemplate views:TestPage}"></ShellContent>
+            <ShellContent Title="Page2" ContentTemplate="{DataTemplate views:TestPage}"></ShellContent>
+        </Tab>
     </FlyoutItem>
+    
     <FlyoutItem Title="About"
                 FlyoutIcon="tab_about.png">
         <ShellContent Title="About" ContentTemplate="{DataTemplate views:AboutPage}"></ShellContent>
@@ -64,6 +55,32 @@
         <ShellContent Title="Settings" ContentTemplate="{DataTemplate views:SettingsPage}"></ShellContent>
     </FlyoutItem>
 
+    <MenuItem Text="Test"
+              Icon="tab_feed.png"
+              Clicked="MenuItem_Clicked">
+    </MenuItem>
+
+    <MenuItem Text="Test"
+              Icon="tab_feed.png"
+              Command="{Binding .}">
+    </MenuItem>
+
+    <!--TODO: set set template for flyout and menu items-->
+    <!--<Shell.ItemTemplate>
+        <DataTemplate>
+            <ContentView>
+                
+            </ContentView>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <ContentView>
+                
+            </ContentView>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>-->
 
     <!-- Your Pages -->
     <!--<TabBar>

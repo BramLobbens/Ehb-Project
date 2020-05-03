@@ -10,6 +10,9 @@ namespace AppXamShell.Services
     {
         readonly List<Item> items;
 
+        //testing
+        bool loggedIn { get; set; }
+
         public MockDataStore()
         {
             items = new List<Item>()
@@ -55,6 +58,16 @@ namespace AppXamShell.Services
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(items);
+        }
+
+        public bool GetLoggedStatus()
+        {
+            return loggedIn;
+        }
+
+        public void SetLoggedStatus(bool status)
+        {
+            loggedIn = status;
         }
     }
 }

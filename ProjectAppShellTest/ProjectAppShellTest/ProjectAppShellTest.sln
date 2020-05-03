@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppXamShell.Android", "AppXamShell\AppXamShell.Android\AppXamShell.Android.csproj", "{8D65D5E1-581F-41C0-8C61-D4F04F93870A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppXamShell", "AppXamShell\AppXamShell\AppXamShell.csproj", "{0EA5D578-A183-4441-92BE-2A0943086402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppXamShell", "AppXamShell\AppXamShell\AppXamShell.csproj", "{0EA5D578-A183-4441-92BE-2A0943086402}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatServer", "ChatServer\ChatServer.csproj", "{661812F9-04EA-4030-B690-617F80D3411F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServerLocal", "ChatServerLocal\ChatServerLocal.csproj", "{06CDB4CC-20BA-4919-A903-4C021FEF0C41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{0EA5D578-A183-4441-92BE-2A0943086402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EA5D578-A183-4441-92BE-2A0943086402}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0EA5D578-A183-4441-92BE-2A0943086402}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{661812F9-04EA-4030-B690-617F80D3411F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661812F9-04EA-4030-B690-617F80D3411F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661812F9-04EA-4030-B690-617F80D3411F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661812F9-04EA-4030-B690-617F80D3411F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CDB4CC-20BA-4919-A903-4C021FEF0C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CDB4CC-20BA-4919-A903-4C021FEF0C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06CDB4CC-20BA-4919-A903-4C021FEF0C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06CDB4CC-20BA-4919-A903-4C021FEF0C41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
